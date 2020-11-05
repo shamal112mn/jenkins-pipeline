@@ -22,7 +22,7 @@ node{
             sh "ssh -o StrictHostKeyChecking=false -i $SSH_KEY root@${node_ip} 'systemctl start httpd && systemctl enable httpd'"
         }
         stage('Final stage'){
-            sh "echo End ver 0"
+            sh "echo End ver 1"
         }
     } 
 }
